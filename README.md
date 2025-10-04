@@ -3,24 +3,17 @@
 
 ## Sekilas Tentang
 
-**Apprise** adalah pustaka Python sumber terbuka dan utilitas baris perintah (CLI) yang berfungsi sebagai pembungkus universal (universal wrapper) untuk mengirim notifikasi ke hampir semua layanan notifikasi populer yang tersedia saat ini (lebih dari 100 layanan, termasuk Telegram, Discord, Slack, Amazon SNS, Gotify, Email, SMS gateways, dll.). Tujuannya adalah menyederhanakan integrasi notifikasi ke dalam skrip, aplikasi, dan sistem pengawasan.
-
-Fitur utamanya meliputi:
-
-- Satu pustaka notifikasi untuk semua layanan dengan sintaks yang umum dan intuitif.
-
-- Mendukung pengiriman pesan secara asinkron untuk waktu respons yang cepat.
-
-- Mendukung penanganan gambar dan lampiran (jika layanan notifikasi mendukungnya).
-
-- Desain yang ringan (incredibly lightweight).
+**Apprise** adalah sebuah library dan command line tool (CLI) untuk mengirimkan notifikasi ke hampir semua layanan notifikasi populer, seperti Telegram, Discord, Slack, Amazon SNS, Gotify, Email (SMTP/Gmail), dan lainnya.
+Tujuan utamanya adalah memberikan satu cara yang sederhana, ringan, dan seragam untuk mengirim notifikasi tanpa perlu menulis integrasi untuk setiap layanan satu per satu.
 
 
-## Instalasi
+**Prasyarat**  
+  - Python (versi terbaru disarankan, ≥ 3.7)  
+  - pip (package manager Python)  
 
-- Prasyarat, apa saja yang harus diinstal sebelumnya.
-- Langkah instalasi dalam CLI.
-
+**Langkah instalasi dalam CLI**  
+  ```bash
+  pip install apprise
 
 ## Konfigurasi (opsional)
 
