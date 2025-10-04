@@ -12,8 +12,10 @@ Tujuan utamanya adalah memberikan satu cara yang sederhana, ringan, dan seragam 
   - pip (package manager Python)  
 
 **Langkah instalasi dalam CLI**  
-  ```bash```
+  ```bash
   pip install apprise
+  ```
+ 
 
 ## Konfigurasi 
 Beberapa konfigurasi yang dapat dilakukan:
@@ -60,10 +62,12 @@ apprise -t "Notifikasi Email" -b "Pesan lewat Gmail" "mailto://user@gmail.com:pa
 - Syntax seragam dan intuitif.
 - Mendukung attachment (gambar/file).
 - Support banyak platform termasuk Email/Gmail.
+  
 **Kekurangan :**
 - Tidak ada GUI bawaan (hanya CLI dan library).
 - Fungsi terbatas hanya untuk notifikasi, bukan aplikasi chatting penuh.
 - Bergantung pada API layanan pihak ketiga (jika berubah, perlu update).
+  
 **Perbandingan :**
 - Dibanding coding manual API Telegram/Slack/SMTP, Apprise jauh lebih ringkas.
 - Dibanding Pushover atau Firebase, Apprise lebih fleksibel (multi-platform), tapi mungkin tidak selengkap fitur native platform tertentu.
