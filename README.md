@@ -12,50 +12,62 @@ Tujuan utamanya adalah memberikan satu cara yang sederhana, ringan, dan seragam 
   - pip (package manager Python)  
 
 **Langkah instalasi dalam CLI**  
-  ```bash
+  ```bash```
   pip install apprise
 
-## Konfigurasi (opsional)
-
-Setting server tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
-- batas upload file
-- batas memori
-- dll
-
-Plugin untuk fungsi tambahan
-- login dengan Google/Facebook
-- editor Markdown
-- dll
+## Konfigurasi 
+Beberapa konfigurasi yang dapat dilakukan:
+- Menambahkan URL notifikasi (Telegram, Slack, Discord, dsb.) ke dalam skrip konfigurasi.
+- Mengatur syntax notifikasi yang umum dan intuitif.
+- Mengaktifkan dukungan gambar dan attachment (jika layanan mendukung).
+Plugin tambahan (misalnya integrasi login pihak ketiga) tidak diperlukan, karena Apprise sudah support multi-platform notification secara native.
 
 
-##  Maintenance (opsional)
+##  Maintenance
 
-Setting tambahan untuk maintenance secara periodik, misalnya:
-- buat backup database tiap pekan
-- hapus direktori sampah tiap hari
-- dll
+Tidak ada konfigurasi maintenance yang rumit.
+Namun, untuk sistem server:
+- Bisa menambahkan cron job untuk otomatisasi backup notifikasi log.
+- Monitoring performa karena Apprise mengirim pesan secara asynchronous.
 
+## Otomatisasi
 
-## Otomatisasi (opsional)
-
-Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
-
+Bisa dibuat script shell untuk otomatisasi:
+ ```bash```
+ #!/bin/bash
+pip install apprise
+apprise -t "Judul Pesan" -b "Isi notifikasi" "discord://token/..."
+apprise -t "Hello via Email" -b "Ini pesan lewat Gmail" "mailto://user@gmail.com:password@smtp.gmail.com"
 
 ## Cara Pemakaian
 
-- Tampilan aplikasi web
-- Fungsi-fungsi utama
-- Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
+Tampilan aplikasi: berbasis CLI, tidak memiliki GUI bawaan.
+Fungsi utama:
+- Mengirim notifikasi teks ke berbagai layanan (Telegram, Slack, Discord, Email/Gmail, dll).
+- Mendukung attachment (gambar/file) jika layanan memungkinkan.
+- Pesan dikirim secara asynchronous → respon cepat.
+ ```bash```
+  apprise -t "Hello" -b "Ini pesan dari Apprise" "tgram://TOKEN/CHAT_ID"
+apprise -t "Notifikasi Email" -b "Pesan lewat Gmail" "mailto://user@gmail.com:password@smtp.gmail.com"
+
 
 
 ## Pembahasan
 
-- Pendapat anda tentang aplikasi web ini
-    - kelebihan
-    - kekurangan
-- Bandingkan dengan aplikasi web lain yang sejenis
+**Kelebihan :**
+- Satu library untuk hampir semua layanan notifikasi.
+- Lightweight dan cepat.
+- Syntax seragam dan intuitif.
+- Mendukung attachment (gambar/file).
+- Support banyak platform termasuk Email/Gmail.
+**Kekurangan :**
+- Tidak ada GUI bawaan (hanya CLI dan library).
+- Fungsi terbatas hanya untuk notifikasi, bukan aplikasi chatting penuh.
+- Bergantung pada API layanan pihak ketiga (jika berubah, perlu update).
+**Perbandingan :**
+- Dibanding coding manual API Telegram/Slack/SMTP, Apprise jauh lebih ringkas.
+- Dibanding Pushover atau Firebase, Apprise lebih fleksibel (multi-platform), tapi mungkin tidak selengkap fitur native platform tertentu.
 
 
 ## Referensi
-
-Cantumkan tiap sumber informasi yang anda pakai.
+- Dokumentasi resmi: https://github.com/caronc/apprise
