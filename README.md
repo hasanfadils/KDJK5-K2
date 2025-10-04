@@ -1,9 +1,9 @@
 # KELOMPOK 5 P2 - APPRISE
-  - G6401231051	Hasan Fadilah
-  - G6401231052	Hannan Azhari Batubara
-  - G6401231064	Cokorda Gede Satria Widnyana Putra
-  - G6401231066	Jofattan Faiz Betryan
-  - G6401231135	Jordan Vieno Simamora
+  - Hasan Fadilah (G6401231051)
+  - Hannan Azhari Batubara (G6401231052)
+  - Cokorda Gede Satria Widnyana Putra (G6401231064)
+  - Jofattan Faiz Betryan (G6401231066)
+  - Jordan Vieno Simamora (G6401231135)
   
 ![Tampilan Screenshot Aplikasi](https://github.com/hasanfadils/KDJK5-K2/blob/main/Screenshot%202025-10-04%20164903.png?raw=true)
 
