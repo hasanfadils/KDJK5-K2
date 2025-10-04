@@ -1,4 +1,10 @@
-# APPRISE
+# KELOMPOK 5 - APPRISE
+  G6401231051	Hasan Fadilah
+  G6401231052	Hannan Azhari Batubara
+	G6401231064	Cokorda Gede Satria Widnyana Putra
+	G6401231066	Jofattan Faiz Betryan
+	G6401231135	Jordan Vieno Simamora
+  
 ![Tampilan Screenshot Aplikasi](https://github.com/hasanfadils/KDJK5-K2/blob/main/Screenshot%202025-10-04%20164903.png?raw=true)
 
 ## Sekilas Tentang
@@ -35,11 +41,12 @@ Namun, untuk sistem server:
 ## Otomatisasi
 
 Bisa dibuat script shell untuk otomatisasi:
- ```bash```
+ ```bash
  #!/bin/bash
 pip install apprise
 apprise -t "Judul Pesan" -b "Isi notifikasi" "discord://token/..."
 apprise -t "Hello via Email" -b "Ini pesan lewat Gmail" "mailto://user@gmail.com:password@smtp.gmail.com"
+```
 
 ## Cara Pemakaian
 
@@ -48,10 +55,10 @@ Fungsi utama:
 - Mengirim notifikasi teks ke berbagai layanan (Telegram, Slack, Discord, Email/Gmail, dll).
 - Mendukung attachment (gambar/file) jika layanan memungkinkan.
 - Pesan dikirim secara asynchronous → respon cepat.
- ```bash```
+ ```bash
   apprise -t "Hello" -b "Ini pesan dari Apprise" "tgram://TOKEN/CHAT_ID"
 apprise -t "Notifikasi Email" -b "Pesan lewat Gmail" "mailto://user@gmail.com:password@smtp.gmail.com"
-
+```
 
 
 ## Pembahasan
