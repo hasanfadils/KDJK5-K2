@@ -40,7 +40,7 @@ Namun, untuk sistem server:
 
 ## Otomatisasi
 
-Bisa dibuat script shell untuk otomatisasi:
+Contoh script shell untuk instalasi dan mengirim notifikasi otomatis:
  ```bash
  #!/bin/bash
 pip install apprise
