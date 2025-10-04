@@ -5,7 +5,7 @@
   - Jofattan Faiz Betryan (G6401231066)
   - Jordan Vieno Simamora (G6401231135)
   
-![Tampilan Screenshot Aplikasi](https://github.com/hasanfadils/KDJK5-K2/blob/main/Screenshot%202025-10-04%20164903.png?raw=true)
+![Tampilan Screenshot Aplikasi](https://raw.githubusercontent.com/hasanfadils/KDJK5-K2/refs/heads/main/Screenshoot/Apprise%20Logo.png)
 [Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Otomatisasi](#otomatisasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
 
 ## Sekilas Tentang
