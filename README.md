@@ -1,5 +1,5 @@
 # APPRAISE
-![image alt](image_url)
+![image alt]([image_url](https://github.com/hasanfadils/KDJK5-K2/blob/6a7d41046d7c676c86ea9a53db18134dc706ebb9/Screenshot%202025-10-04%20164903.png))
 
 ## Sekilas Tentang
 
