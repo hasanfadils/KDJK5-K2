@@ -1,5 +1,5 @@
 # APPRISE
-![image alt]((https://github.com/hasanfadils/KDJK5-K2/blob/main/Screenshot%202025-10-04%20164903.png?raw=true)
+![Tampilan Screenshot Aplikasi](https://github.com/hasanfadils/KDJK5-K2/blob/main/Screenshot%202025-10-04%20164903.png?raw=true)
 
 ## Sekilas Tentang
 
