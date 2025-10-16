@@ -6,7 +6,7 @@
   - Jordan Vieno Simamora (G6401231135)
   
 ![Tampilan Screenshot Aplikasi](https://raw.githubusercontent.com/hasanfadils/KDJK5-K2/refs/heads/main/Screenshoot/Apprise%20Logo.png)
-[Sekilas Tentang](#sekilas-tentang) | [Instalasi&Setup](#instalasi) | [Konfigurasi](#konfigurasi) | [Otomatisasi](#otomatisasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
+[Sekilas Tentang](#sekilas-tentang) | [Instalasi&Setup](#instalasi--setup) | [Konfigurasi](#konfigurasi) | [Otomatisasi](#otomatisasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
 
 ## Sekilas Tentang
 
@@ -18,7 +18,7 @@ Tujuan utamanya adalah memberikan satu cara yang sederhana, ringan, dan seragam 
   - Python (versi terbaru disarankan, ≥ 3.7)  
   - pip (package manager Python)  
 
-## Instalasi & Set Up
+## Instalasi & Setup
 - Membuat virtual environment dengan python 3.12
    
 ```bash
