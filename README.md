@@ -13,27 +13,21 @@
 **Apprise** adalah sebuah library dan command line tool (CLI) untuk mengirimkan notifikasi ke hampir semua layanan notifikasi populer, seperti Telegram, Discord, Slack, Amazon SNS, Gotify, Email (SMTP/Gmail), dan lainnya.
 Tujuan utamanya adalah memberikan satu cara yang sederhana, ringan, dan seragam untuk mengirim notifikasi tanpa perlu menulis integrasi untuk setiap layanan satu per satu.
 
+**Prasyarat**  
+  - Python (versi terbaru disarankan, ≥ 3.7)  
+  - pip (package manager Python)
+    
 **Fitur Utama:**
 - One-to-Many Fan-Out (sekali kirim → banyak kanal) 
 Satu aksi mengirim ke beberapa layanan sekaligus (Discord, Email/SMTP, Telegram, dll).
-  - Impact: Reliabilitas naik (redundansi kanal) & hemat waktu integrasi — pesan lebih pasti terbaca.
-
 - Unified URL Schema + Dukungan Banyak Layanan
 Semua target ditulis sebagai Apprise URL (discord://…, mailto(s)://…, tgram://…)—tanpa perlu SDK khusus tiap platform.
-  - Impact: Kurva belajar rendah & biaya integrasi turun drastis; ganti/ tambah kanal cukup ubah URL.
-
 - Format Konten: Text / Markdown / HTML
 Tentukan cara render pesan.
-  - Manfaat: Fleksibel—bisa plain text, basic formatting, atau HTML bila layanan mendukung.
-
 - Tag & Filter Target
-Tambahkan ?tag=... pada URL (mis. chat, mail) lalu pilih tag saat mengirim.
-  - Manfaat: Kirim ke subset penerima tanpa mengubah YAML.
+Tambahkan ?tag=... pada URL (mis. chat, mail) lalu pilih tag saat mengirim
 
 
-**Prasyarat**  
-  - Python (versi terbaru disarankan, ≥ 3.7)  
-  - pip (package manager Python)  
 
 ## Instalasi & Setup
 **Instalasi**
