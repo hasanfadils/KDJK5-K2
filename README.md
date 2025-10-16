@@ -6,7 +6,7 @@
   - Jordan Vieno Simamora (G6401231135)
   
 ![Tampilan Screenshot Aplikasi](https://raw.githubusercontent.com/hasanfadils/KDJK5-K2/refs/heads/main/Screenshoot/Apprise%20Logo.png)
-[Sekilas Tentang](#sekilas-tentang) | [Instalasi&Setup](#instalasi--setup) | [Konfigurasi](#konfigurasi) | [Otomatisasi](#otomatisasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
+[Sekilas Tentang](#sekilas-tentang) | [Instalasi&Setup](#instalasi--setup) | [Otomatisasi](#otomatisasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
 
 ## Sekilas Tentang
 
@@ -95,15 +95,6 @@ Notifications → Process As (Text/Markdown/HTML) → Title (opsional) → Body 
 ![1](https://github.com/hasanfadils/KDJK5-K2/blob/9249ab64ab23c0af87e6004fbef0358dace28457/Screenshoot/5.png)
 
 
-
-## Konfigurasi 
-Beberapa konfigurasi yang dapat dilakukan:
-- Menambahkan URL notifikasi (Telegram, Slack, Discord, dsb.) ke dalam skrip konfigurasi.
-- Mengatur syntax notifikasi yang umum dan intuitif.
-- Mengaktifkan dukungan gambar dan attachment (jika layanan mendukung).
-Plugin tambahan (misalnya integrasi login pihak ketiga) tidak diperlukan, karena Apprise sudah support multi-platform notification secara native.
-
-
 ##  Maintenance
 
 Tidak ada konfigurasi maintenance yang rumit.
@@ -113,12 +104,25 @@ Namun, untuk sistem server:
 
 ## Otomatisasi
 
-Contoh script shell untuk instalasi dan mengirim notifikasi otomatis:
+Apprise API sangat ideal untuk otomatisasi melalui panggilan API (HTTP Request) ke alamat server.
+
+Skrip Shell/Aplikasi untuk Mengirim Notifikasi:
+
+Setelah konfigurasi (dengan Config ID) disimpan, Anda dapat mengintegrasikannya ke dalam skrip shell atau aplikasi Anda dengan memanggil endpoint notifikasi dan menyertakan Config ID dan tag yang relevan.
+
+Contoh Panggilan API (Konseptual): Mengirim notifikasi ke semua layanan dengan tag chat (yaitu Discord dari konfigurasi di atas).
  ```bash
- #!/bin/bash
-pip install apprise
-apprise -t "Judul Pesan" -b "Isi notifikasi" "discord://token/..."
-apprise -t "Hello via Email" -b "Ini pesan lewat Gmail" "mailto://user@gmail.com:password@smtp.gmail.com"
+ # Contoh menggunakan cURL untuk POST request ke Apprise API
+# (Ganti [CONFIG_ID] dengan ID yang tersimpan)
+CONFIG_ID="5432c9ff@fa23935bb5acb906420698e6f712651844596aeb7c9a8684c3700e9"
+
+curl -X POST http://127.0.0.1:8000/notify/${CONFIG_ID} \
+     -H "Content-Type: application/json" \
+     -d '{
+           "title": "Peringatan Server",
+           "body": "Memori kritis 90%. Segera periksa!",
+           "tag": "chat" 
+         }'
 ```
 
 ## Cara Pemakaian
