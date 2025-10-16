@@ -68,9 +68,9 @@ Menyimpan daftar target notifikasi di server dengan sebuah key.
 - Isi YAML contoh (Discord + Email)
   
 ![1](https://github.com/hasanfadils/KDJK5-K2/blob/9249ab64ab23c0af87e6004fbef0358dace28457/Screenshoot/3.png)
-Keterangan singkat: user%40domain.tld = encode @; 587 = mailto://…?mode=starttls; 465 = mailtos://… (tanpa mode=starttls); tag= untuk filter tujuan.
-Contoh:
-urls:
+Keterangan singkat: user%40domain.tld = encode @; 587 = mailto://…?mode=starttls; 465 = mailtos://… (tanpa mode=starttls); tag= untuk filter tujuan
+
+Contoh urls:
   - "discord://1423711671544713310/ePj3SgU9kJk5ZrWICZXFjv7aN9-YHh1TSHjaqoqtvhd7XZEqSPn7wh5nEWQ-TN50Q7xu?tag=chat"
   - "mailto://cokgdsatria%40apps.ipb.ac.id:APP_PASSWORD_16@smtp.gmail.com:587/?mode=starttls&from=cokgdsatria@apps.ipb.ac.id&to=hasanfadilah@apps.ipb.ac.id,coksatria2005@gmail.com,jordanvienosimamora@gmail.com,hannanbatubara@apps.ipb.ac.id&tag=mail"
     
