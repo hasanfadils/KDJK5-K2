@@ -6,7 +6,7 @@
   - Jordan Vieno Simamora (G6401231135)
   
 ![Tampilan Screenshot Aplikasi](https://raw.githubusercontent.com/hasanfadils/KDJK5-K2/refs/heads/main/Screenshoot/Apprise%20Logo.png)
-[Sekilas Tentang](#sekilas-tentang) | [Instalasi&Setup](#instalasi--setup) | [Otomatisasi](#otomatisasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
+[Sekilas Tentang](#sekilas-tentang) | [Instalasi&Setup](#instalasi--setup) | [Otomatisasi](#otomatisasi) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
 
 ## Sekilas Tentang
 
@@ -125,37 +125,23 @@ curl -X POST http://127.0.0.1:8000/notify/${CONFIG_ID} \
          }'
 ```
 
-## Cara Pemakaian
-
-Tampilan aplikasi: berbasis CLI, tidak memiliki GUI bawaan.
-Fungsi utama:
-- Mengirim notifikasi teks ke berbagai layanan (Telegram, Slack, Discord, Email/Gmail, dll).
-- Mendukung attachment (gambar/file) jika layanan memungkinkan.
-- Pesan dikirim secara asynchronous → respon cepat.
- ```bash
-  apprise -t "Hello" -b "Ini pesan dari Apprise" "tgram://TOKEN/CHAT_ID"
-apprise -t "Notifikasi Email" -b "Pesan lewat Gmail" "mailto://user@gmail.com:password@smtp.gmail.com"
-```
 
 
 ## Pembahasan
 
 **Kelebihan :**
-- Satu library untuk hampir semua layanan notifikasi.
-- Lightweight dan cepat.
-- Syntax seragam dan intuitif.
-- Mendukung attachment (gambar/file).
-- Support banyak platform termasuk Email/Gmail.
+- Kurva Belajar Rendah: Berkat Unified URL Schema, pengembang tidak perlu mempelajari API yang berbeda-beda.
+- Sangat Fleksibel: Kemampuan One-to-Many Fan-Out dan dukungan format Text/Markdown/HTML menjadikannya solusi notifikasi yang serbaguna.
+- Efisiensi dan Reliabilitas: Menghemat waktu integrasi dan meningkatkan kepastian pesan terbaca melalui redundansi kanal.
+- Fitur Tagging: Fitur Tag & Filter Target memungkinkan kontrol yang sangat baik atas siapa yang menerima pesan tanpa mengubah konfigurasi dasar.
   
 **Kekurangan :**
-- Tidak ada GUI bawaan (hanya CLI dan library).
-- Fungsi terbatas hanya untuk notifikasi, bukan aplikasi chatting penuh.
-- Bergantung pada API layanan pihak ketiga (jika berubah, perlu update).
+- Lingkungan Development: Aplikasi ini berjalan di atas development server (Django) dan diperingatkan keras untuk tidak digunakan dalam pengaturan produksi tanpa server WSGI/ASGI.
+- Ketergantungan Python/Django: Memerlukan pemahaman dasar tentang Python, venv, dan Django untuk instalasi dan deployment.
+- Kerumitan URL: Meskipun seragam, URL untuk layanan kompleks (seperti SMTP/Email) bisa sangat panjang dan harus menyertakan detail encoding (%40 untuk @).
   
 **Perbandingan :**
-- Dibanding coding manual API Telegram/Slack/SMTP, Apprise jauh lebih ringkas.
-- Dibanding Pushover atau Firebase, Apprise lebih fleksibel (multi-platform), tapi mungkin tidak selengkap fitur native platform tertentu.
-
+Apprise API menawarkan fleksibilitas terbesar dan biaya operasional terendah untuk manajemen notifikasi yang melibatkan puluhan kanal dari satu titik sentral, dengan syarat pengguna siap untuk melakukan self-hosting yang aman.
 
 ## Referensi
 - Dokumentasi resmi: https://github.com/caronc/apprise
