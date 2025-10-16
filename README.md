@@ -37,6 +37,7 @@ git clone https://github.com/caronc/apprise-api.git
 cd apprise-api
 
 - Install dev
+
 Lakukan langkah ini untuk memasang proyek dari folder saat ini ke venv dalam mode editable sekaligus menginstal paket ekstra “dev”, sehingga semua dependensi terpenuhi dan setiap perubahan kode langsung terbaca saat menjalankan Apprise API
 
 ```bash
