@@ -19,6 +19,7 @@ Tujuan utamanya adalah memberikan satu cara yang sederhana, ringan, dan seragam 
   - pip (package manager Python)  
 
 ## Instalasi & Setup
+**Instalasi**
 - Membuat virtual environment dengan python 3.12
    
 ```bash
@@ -52,8 +53,9 @@ Jalankan server di alamat http://127.0.0.1:8000/
 ```bash
 python manage.py runserver
 ```
-
- 
+**Set Up**
+-  Ctrl+Click http://127.0.0.1:8000/ untuk membuka Apprise API – Configuration Manager di browser.
+ ![1](https://github.com/hasanfadils/KDJK5-K2/blob/93bcefe6ade6031f54ef63215ce6b7f771e7940b/Screenshoot/1.png)
 
 ## Konfigurasi 
 Beberapa konfigurasi yang dapat dilakukan:
