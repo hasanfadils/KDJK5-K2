@@ -19,27 +19,36 @@ Tujuan utamanya adalah memberikan satu cara yang sederhana, ringan, dan seragam 
   - pip (package manager Python)  
 
 ## Instalasi & Set Up
-1. Membuat virtual environment dengan python 3.12
+- Membuat virtual environment dengan python 3.12
    
-``` py -3.12 -m venv .venv ```
-
-2.  virtual environment
-   
-``` .\.venv\Scripts\Activate.ps1 ```
-
-3. Git clone digunakan untuk melakukan unduh sumber kode.
 ```bash
-git clone https://github.com/caronc/apprise-api.git
-cd apprise-api
+py -3.12 -m venv .venv
 ```
 
-4. Lakukan langkah ini untuk memasang proyek dari folder saat ini ke venv dalam mode editable sekaligus menginstal paket ekstra “dev”, sehingga semua dependensi terpenuhi dan setiap perubahan kode langsung terbaca saat menjalankan Apprise API.
+- Virtual Environment
+   
+```bash
+.\.venv\Scripts\Activate.ps1
+```
 
+- Git clone 
+digunakan untuk melakukan unduh sumber kode
+git clone https://github.com/caronc/apprise-api.git
+cd apprise-api
+
+- Install dev
+Lakukan langkah ini untuk memasang proyek dari folder saat ini ke venv dalam mode editable sekaligus menginstal paket ekstra “dev”, sehingga semua dependensi terpenuhi dan setiap perubahan kode langsung terbaca saat menjalankan Apprise API
+
+```bash
 pip install -e ".[dev]"
+```
 
+- Run server
+Jalankan server di alamat http://127.0.0.1:8000/
 
+```bash
 python manage.py runserver
-Jalankan server di alamat http://127.0.0.1:8000/.
+```
 
  
 
