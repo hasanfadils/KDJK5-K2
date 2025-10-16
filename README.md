@@ -18,10 +18,8 @@ Tujuan utamanya adalah memberikan satu cara yang sederhana, ringan, dan seragam 
   - Python (versi terbaru disarankan, ≥ 3.7)  
   - pip (package manager Python)  
 
-**Langkah instalasi dalam CLI**  
-  ```bash
-  pip install apprise
-  ```
+## Instalasi & Set Up
+
  
 
 ## Konfigurasi 
