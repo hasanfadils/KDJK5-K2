@@ -32,6 +32,7 @@ py -3.12 -m venv .venv
 ```
 
 - Git clone 
+
 digunakan untuk melakukan unduh sumber kode
 git clone https://github.com/caronc/apprise-api.git
 cd apprise-api
@@ -45,6 +46,7 @@ pip install -e ".[dev]"
 ```
 
 - Run server
+
 Jalankan server di alamat http://127.0.0.1:8000/
 
 ```bash
