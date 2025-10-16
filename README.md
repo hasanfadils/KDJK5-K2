@@ -20,6 +20,7 @@ Tujuan utamanya adalah memberikan satu cara yang sederhana, ringan, dan seragam 
 
 ## Instalasi & Set Up
 1. Membuat virtual environment dengan python 3.12
+   
 ```bash py -3.12 -m venv .venv ```
 
 Mengaktifkan virtual environment
