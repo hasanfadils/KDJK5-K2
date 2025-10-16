@@ -95,12 +95,6 @@ Notifications → Process As (Text/Markdown/HTML) → Title (opsional) → Body 
 ![1](https://github.com/hasanfadils/KDJK5-K2/blob/9249ab64ab23c0af87e6004fbef0358dace28457/Screenshoot/5.png)
 
 
-##  Maintenance
-
-Tidak ada konfigurasi maintenance yang rumit.
-Namun, untuk sistem server:
-- Bisa menambahkan cron job untuk otomatisasi backup notifikasi log.
-- Monitoring performa karena Apprise mengirim pesan secara asynchronous.
 
 ## Otomatisasi
 
