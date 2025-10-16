@@ -23,15 +23,20 @@ Tujuan utamanya adalah memberikan satu cara yang sederhana, ringan, dan seragam 
    
 ``` py -3.12 -m venv .venv ```
 
-Mengaktifkan virtual environment
-```bash .\.venv\Scripts\Activate.ps1 ```
+2.  virtual environment
+   
+``` .\.venv\Scripts\Activate.ps1 ```
 
+3. Git clone digunakan untuk melakukan unduh sumber kode.
+```bash
 git clone https://github.com/caronc/apprise-api.git
 cd apprise-api
-Git clone digunakan untuk melakukan unduh sumber kode.
+```
+
+4. Lakukan langkah ini untuk memasang proyek dari folder saat ini ke venv dalam mode editable sekaligus menginstal paket ekstra “dev”, sehingga semua dependensi terpenuhi dan setiap perubahan kode langsung terbaca saat menjalankan Apprise API.
 
 pip install -e ".[dev]"
-Lakukan langkah ini untuk memasang proyek dari folder saat ini ke venv dalam mode editable sekaligus menginstal paket ekstra “dev”, sehingga semua dependensi terpenuhi dan setiap perubahan kode langsung terbaca saat menjalankan Apprise API.
+
 
 python manage.py runserver
 Jalankan server di alamat http://127.0.0.1:8000/.
