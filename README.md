@@ -56,14 +56,17 @@ python manage.py runserver
 
 **Set Up**
 -  Ctrl+Click http://127.0.0.1:8000/ untuk membuka Apprise API – Configuration Manager di browser.
+  
  ![1](https://github.com/hasanfadils/KDJK5-K2/blob/93bcefe6ade6031f54ef63215ce6b7f771e7940b/Screenshoot/1.png)
 
 - Buat Konfigurasi
+  
 ![1](https://github.com/hasanfadils/KDJK5-K2/blob/9249ab64ab23c0af87e6004fbef0358dace28457/Screenshoot/2.png)
 Configuration Manager → Configuration → YAML → Save
 Menyimpan daftar target notifikasi di server dengan sebuah key.
 
 - Isi YAML contoh (Discord + Email)
+  
 ![1](https://github.com/hasanfadils/KDJK5-K2/blob/9249ab64ab23c0af87e6004fbef0358dace28457/Screenshoot/3.png)
 Keterangan singkat: user%40domain.tld = encode @; 587 = mailto://…?mode=starttls; 465 = mailtos://… (tanpa mode=starttls); tag= untuk filter tujuan.
 Contoh:
@@ -72,10 +75,12 @@ urls:
   - "mailto://cokgdsatria%40apps.ipb.ac.id:APP_PASSWORD_16@smtp.gmail.com:587/?mode=starttls&from=cokgdsatria@apps.ipb.ac.id&to=hasanfadilah@apps.ipb.ac.id,coksatria2005@gmail.com,jordanvienosimamora@gmail.com,hannanbatubara@apps.ipb.ac.id&tag=mail"
     
 - Kirim dari GUI
+  
 ![1](https://github.com/hasanfadils/KDJK5-K2/blob/9249ab64ab23c0af87e6004fbef0358dace28457/Screenshoot/4.png)
 Notifications → Process As (Text/Markdown/HTML) → Title (opsional) → Body (wajib) → Tag (opsional) → Send Notification
 
 - Notifikasi berhasil dikirim
+  
 ![1](https://github.com/hasanfadils/KDJK5-K2/blob/9249ab64ab23c0af87e6004fbef0358dace28457/Screenshoot/5.png)
 
 Fitur Utama:
